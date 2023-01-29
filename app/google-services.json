@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "592557747620",
+    "firebase_url": "https://project-de916.firebaseio.com",
+    "project_id": "project-de916",
+    "storage_bucket": "project-de916.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:592557747620:android:e4b09b958fc95fdb16a531",
+        "android_client_info": {
+          "package_name": "com.meghamlabs.musicapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "592557747620-gv8k7vfdrvkm1l5rk5kaqebun5fm1kd9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyANr6LSP6-feWFa8UqFahWcEazuD3hs5AA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "592557747620-9bf909c3odedfhnuok5sph6uvgmqcuf7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
