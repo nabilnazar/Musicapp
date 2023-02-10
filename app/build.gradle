@@ -1,12 +1,19 @@
+
+
 plugins {
     id 'com.android.application'
     id 'org.jetbrains.kotlin.android'
     id 'com.google.gms.google-services'
+    id 'kotlin-kapt'
+    id "dagger.hilt.android.plugin"
 }
 apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
 apply plugin: 'kotlin-kapt'
+
+
+
 
 android {
     namespace 'com.meghamlabs.musicapp'
@@ -14,7 +21,7 @@ android {
 
     defaultConfig {
         applicationId "com.meghamlabs.musicapp"
-        minSdk 28
+        minSdk 25
         targetSdk 33
         versionCode 1
         versionName "1.0"
@@ -28,6 +35,11 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
+
+    dataBinding {
+        enabled = true
+    }
+
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
@@ -36,6 +48,10 @@ android {
         jvmTarget = '1.8'
     }
 }
+kapt {
+    correctErrorTypes true
+}
+
 
 dependencies {
 
@@ -43,9 +59,10 @@ dependencies {
     implementation 'androidx.appcompat:appcompat:1.6.0'
     implementation 'com.google.android.material:material:1.8.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
-
+    implementation "org.jetbrains:annotations:20.0.0"
 
     implementation 'com.google.android.material:material:1.9.0-alpha01'
+
 
     // Architectural Components
     implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:2.5.1"
@@ -56,7 +73,7 @@ dependencies {
     implementation "androidx.lifecycle:lifecycle-runtime-ktx:2.5.1"
 
     // Coroutines
-    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-core:1.3.9'
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-core:1.6.4'
     implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.4'
 
     // Coroutine Lifecycle Scopes
@@ -68,16 +85,15 @@ dependencies {
     implementation "androidx.navigation:navigation-ui-ktx:2.5.3"
 
     // Glide
-    implementation 'com.github.bumptech.glide:glide:4.14.2'
+    implementation 'com.github.bumptech.glide:glide:4.11.0'
     kapt 'com.github.bumptech.glide:compiler:4.11.0'
 
     // Activity KTX for viewModels()
     implementation "androidx.activity:activity-ktx:1.6.1"
 
     //Dagger - Hilt
-    implementation "com.google.dagger:hilt-android:2.44"
-    kapt "com.google.dagger:hilt-android-compiler:2.28-alpha"
-    implementation "androidx.hilt:hilt-lifecycle-viewmodel:1.0.0-alpha03"
+    implementation "com.google.dagger:hilt-android:2.44.2"
+    kapt "com.google.dagger:hilt-android-compiler:2.44.2"
     kapt "androidx.hilt:hilt-compiler:1.0.0"
 
     // Timber
@@ -96,7 +112,6 @@ dependencies {
     api "com.google.android.exoplayer:exoplayer-core:2.18.2"
     api "com.google.android.exoplayer:exoplayer-ui:2.18.2"
     api "com.google.android.exoplayer:extension-mediasession:2.18.2"
-
 
 
     testImplementation 'junit:junit:4.13.2'

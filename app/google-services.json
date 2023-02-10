@@ -1,34 +1,34 @@
 {
   "project_info": {
-    "project_number": "592557747620",
-    "firebase_url": "https://project-de916.firebaseio.com",
-    "project_id": "project-de916",
-    "storage_bucket": "project-de916.appspot.com"
+    "project_number": "962702998265",
+    "firebase_url": "https://projectudhay-71ed3-default-rtdb.firebaseio.com",
+    "project_id": "projectudhay-71ed3",
+    "storage_bucket": "projectudhay-71ed3.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:592557747620:android:e4b09b958fc95fdb16a531",
+        "mobilesdk_app_id": "1:962702998265:android:ee001c312baf1eadbd4028",
         "android_client_info": {
           "package_name": "com.meghamlabs.musicapp"
         }
       },
       "oauth_client": [
         {
-          "client_id": "592557747620-gv8k7vfdrvkm1l5rk5kaqebun5fm1kd9.apps.googleusercontent.com",
+          "client_id": "962702998265-8iuvsmt9k0psb57km0hv2otp6m2468ta.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyANr6LSP6-feWFa8UqFahWcEazuD3hs5AA"
+          "current_key": "AIzaSyBCTTESc8VBljcMJv1VQwlxWKryMsh3OLo"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "592557747620-9bf909c3odedfhnuok5sph6uvgmqcuf7.apps.googleusercontent.com",
+              "client_id": "962702998265-8iuvsmt9k0psb57km0hv2otp6m2468ta.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
